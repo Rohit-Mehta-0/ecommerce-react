@@ -38,20 +38,20 @@ const Header = ()=>{
                     </div>
                     <div className='col-5'>
                         <header className='header-upper-links d-flex align items-center justify-content-between'>
-                            <div>
+                            {/* <div>
                                 <Link to ="/" className='d-flex align-items-center gap-10 text-white'>
                                     <img src="images/compare.svg" alt="compare"/>
                                     <p className='mb-0'>Compare<br/> Products</p>
                                 </Link>
-                            </div>
+                            </div> */}
                             <div>
-                                <Link to ="/" className='d-flex align-items-center gap-10 text-white'>
+                                <Link to ="/wishlist" className='d-flex align-items-center gap-10 text-white'>
                                     <img src="images/wishlist.svg" alt="wishlist"/>
                                     <p className='mb-0'>Favourite<br/> Wishlist</p>
                                 </Link>
                             </div>
                             <div>
-                                <Link to ="/" className='d-flex align-items-center gap-10 text-white'>
+                                <Link to ="/login" className='d-flex align-items-center gap-10 text-white'>
                                     <img src="images/user.svg" alt="yser"/>
                                     <p className='mb-0'>Login<br/> My Account</p>
                                 </Link>

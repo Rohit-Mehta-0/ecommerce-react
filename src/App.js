@@ -7,6 +7,12 @@ import About from './pages/About';
 import Contact from './pages/Contact'
 import OurStore from './pages/OurStore';
 import Blog from './pages/Blog';
+import Wishlist from './pages/Wishlist';
+import Login from './pages/Login';
+import ForgetPassword from './pages/forgetPassword';
+import Signup from './pages/Signup';
+import SingleBlog from './pages/SingleBlog';
+import SingleProduct from './pages/SingleProduct';
 function App() {
   return (
     <>
@@ -17,7 +23,17 @@ function App() {
             <Route path ="about" element={<About/>}/>
             <Route path ="contact" element={<Contact/>}/>
             <Route path ="store" element={<OurStore/>}/>
+            <Route path ="/:id" element={<SingleProduct/>}/>
             <Route path ="blogs" element={<Blog/>}/>
+            <Route path ="blogs/blog" element={<SingleBlog/>}/>          
+            <Route path ="wishlist" element={<Wishlist/>}/>
+            <Route path ="login" element={<Login/>}/>
+            <Route path ="forgetPassword" element={<ForgetPassword/>}/>
+            <Route path ="/signup" element={<Signup/>}/>
+
+
+
+
           </Route>
 
         </Routes>
