@@ -5,6 +5,7 @@ import {AiOutlineHome} from "react-icons/ai"
 import {BiPhoneCall} from "react-icons/bi"
 import {BiInfoCircle} from "react-icons/bi"
 import {AiOutlineMail} from "react-icons/ai"
+import Container from "../components/Container";
 
 
 
@@ -14,9 +15,9 @@ const Contact = ()=>{
         <>  
             <Meta title={"Contact Us"}/>
             <BreadCrumb title={"Contact Us"}/>
-
-            <div className="container-xxl">
-                <div className="row">
+            
+            <Container class1="contact-wrapper py-5 home-wrapper-2">
+            <div className="row">
                     <div className="col-12">
                         <div className="contact-wrapper d-flex justify-content-between">
                             <div className="">
@@ -67,8 +68,7 @@ const Contact = ()=>{
                         </div>
                     </div>
                 </div>
-            </div>
-            
+            </Container>
         </>
     )
 }

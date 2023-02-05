@@ -19,7 +19,9 @@ const ProductCard =(props)=>{
                 
             <Link to="/:id" className='product-card position-relative'>
                 <div className='wishlist-icon position-absolute'>
-                    <Link to="/"> <img src={wishlist} alt="wishlist"/></Link>
+                    <button className ="border-0 bg-transparent">
+                         <img src={wishlist} alt="wishlist"/>
+                    </button>
                 </div>
                 <div className='product-image'>
                     <img src="images/watch.jpg" alt="productimage"/>
@@ -44,15 +46,15 @@ const ProductCard =(props)=>{
 
                 <div className='action-bar position-absolute'>
                     <div className='d-flex flex-column gap-15'>
-                        <Link to="/">
+                        <button className ="border-0 bg-transparent">
                             <img src={prodcompare} alt="compare"/>
-                        </Link>
-                        <Link to="/">
+                        </button>
+                        <button className ="border-0 bg-transparent">
                             <img src={view} alt="view"/>
-                        </Link>
-                        <Link to="/">
+                        </button>
+                        <button className ="border-0 bg-transparent">
                             <img src={addcart} alt="addCart"/>
-                        </Link>                        
+                        </button>                        
                     </div>
                 </div>
             </Link>
@@ -61,7 +63,9 @@ const ProductCard =(props)=>{
         <div className={`${location.pathname ===     "/store" ? `col-${grid}` : "col-3"}`}>
             <div className='product-card position-relative'>
                 <div className='wishlist-icon position-absolute'>
-                    <Link to="/"> <img src={wish} alt="wishlist"/></Link>
+                    <button className ="border-0 bg-transparent">
+                    <img src={wish} alt="wishlist"/>
+                    </button>
                 </div>
                 <div className='product-image'>
                     <img src={watch} alt="productimage"/>
@@ -86,15 +90,15 @@ const ProductCard =(props)=>{
 
                 <div className='action-bar position-absolute'>
                     <div className='d-flex flex-column gap-15'>
-                        <Link to="/">
+                    <button className ="border-0 bg-transparent">
                             <img src={prodcompare} alt="compare"/>
-                        </Link>
-                        <Link to="/">
+                        </button>
+                        <button className ="border-0 bg-transparent">
                             <img src={view}alt="view"/>
-                        </Link>
-                        <Link to="/">
+                        </button>
+                        <button className ="border-0 bg-transparent">
                             <img src={addcart} alt="addCart"/>
-                        </Link>                        
+                        </button>                        
                     </div>
                 </div>
             </div>
