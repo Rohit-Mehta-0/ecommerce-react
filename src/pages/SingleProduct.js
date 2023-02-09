@@ -100,8 +100,6 @@ const SingleProduct = ()=>{
                                     </p>
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
                     </div>

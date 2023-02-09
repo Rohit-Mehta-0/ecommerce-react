@@ -4,6 +4,12 @@ import Meta from "../components/Meta";
 import ReactStars from "react-rating-stars-component";
 import ProductCard from '../components/ProductCard'
 import Container from "../components/Container";
+import watch from '../images/watch.jpg'
+import gr1 from '../images/gr.svg'
+import gr2 from '../images/gr2.svg'
+import gr3 from '../images/gr3.svg'
+import gr4 from '../images/gr4.svg'
+
  const OurStore =()=>{
    const [grid, setGrid] = useState(4);
 
@@ -94,7 +100,7 @@ import Container from "../components/Container";
                 <div>
                 <div className="random-products mb-3 d-flex">
                     <div className="w-50">
-                      <img src='images/watch.jpg' alt='watch' className="img-fluid"/>
+                      <img src={watch} alt='watch' className="img-fluid"/>
                     </div>
                     <div className="w-50">
                       <h5>Kids Headphone bulk 10 pack multi  colored for students</h5>
@@ -111,7 +117,7 @@ import Container from "../components/Container";
                   </div>  
                   <div className="random-products mb-3 d-flex">
                     <div className="w-50">
-                      <img src='images/watch.jpg' alt='watch' className="img-fluid"/>
+                      <img src={watch} alt='watch' className="img-fluid"/>
                     </div>
                     <div className="w-50">
                       <h5>Kids Headphone bulk 10 pack multi  colored for students</h5>
@@ -136,7 +142,7 @@ import Container from "../components/Container";
                   <div>  
                   <p className="mb-0 d-block" style={{"width": "100px"}}>Sort By: </p>
                   </div>
-                  <select name="" className="form-control form-select" id="">
+                  <select name="" defaultValue={"manual"}className="form-control form-select" id="">
                     <option value="manual">Featured</option>
                     <option value="best-selling" selected='selected'>Best Selling</option>
                     <option value="title-ascending" >Alphabetically, A-Z</option>
@@ -151,19 +157,19 @@ import Container from "../components/Container";
                     <img onClick={() =>{
                       setGrid(3)
                       }}
-                       src ='images/gr4.svg' className="d-block img-fluid" alt="grid"/>
+                       src ={gr4} className="d-block img-fluid" alt="grid"/>
                     <img onClick={()=>{
                       setGrid(4)
                       }} 
-                      src ='images/gr3.svg' className="d-block img-fluid" alt="grid"/>
+                      src ={gr3} className="d-block img-fluid" alt="grid"/>
                     <img onClick={()=>{
                       setGrid(6)
                     }} 
-                    src ='images/gr2.svg' className="d-block img-fluid" alt="grid"/>
+                    src ={gr2} className="d-block img-fluid" alt="grid"/>
                     <img onClick={()=>{
                       setGrid(12)
                     }}
-                    src ='images/gr.svg' className="d-block img-fluid" alt="grid"/>
+                    src ={gr1} className="d-block img-fluid" alt="grid"/>
 
                   </div>
                 </div>

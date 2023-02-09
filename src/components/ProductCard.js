@@ -24,7 +24,7 @@ const ProductCard =(props)=>{
                     </button>
                 </div>
                 <div className='product-image'>
-                    <img src="images/watch.jpg" alt="productimage"/>
+                    <img src={watch} alt="productimage"/>
                 </div>
 
                 <div className='product-details'>
